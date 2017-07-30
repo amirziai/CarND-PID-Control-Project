@@ -1,11 +1,7 @@
+#include "iostream"
 #include "PID.h"
-#include <limits>
 
 using namespace std;
-
-/*
-* TODO: Complete the PID class.
-*/
 
 PID::PID() {}
 
@@ -32,4 +28,3 @@ void PID::UpdateError(double cte) {
 double PID::TotalError() {
     return Kp * p_error + Kd * d_error + Ki * i_error;
 }
-
