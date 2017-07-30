@@ -1,6 +1,15 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+### Reflections
+#### Effects of P, I, and D
+* P has the most direct effect. Steering happens proportional to the distance from the lane center.
+* D prevents jerky movements which may be caused by the P component and steers the car more smoothly.
+* I removes residual bias (e.g. steering drift)
+
+#### How the final hyperparameters were chosen
+I manually tuned the parameters. I also tried to automate this using Twiddle which I ended up abandoning.
+
 ---
 
 ## Dependencies
